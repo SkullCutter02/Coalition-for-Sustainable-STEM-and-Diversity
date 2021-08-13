@@ -66,6 +66,10 @@ body {
   overflow: hidden;
 }
 
+.story-content {
+  margin: 0 150px;
+}
+
 .org-container img {
   object-fit: cover;
   width: 100%;
