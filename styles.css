@@ -67,7 +67,8 @@ body {
 }
 
 .story-content {
-  margin: 0 150px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .org-container img {
