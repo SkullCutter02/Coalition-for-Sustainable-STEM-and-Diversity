@@ -45,7 +45,7 @@ body {
   text-align: center;
   font-size: 60px;
   background: -webkit-linear-gradient(45deg, #7234df, rgb(244, 113, 116));
-  text-shadow: 8px 8px 10px rgba(0, 0, 0, 0.4);
+
   padding: 30px;
   margin-bottom: 40px;
   -webkit-background-clip: text;
@@ -57,13 +57,18 @@ body {
   grid-template-columns: repeat(3, 1fr);
 }
 
-.org-container img {
+.org-img-container {
+  border-radius: 50%;
+  box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.4);
+  border: solid 3px #2d3848;
   height: 400px;
   width: 400px;
+  overflow: hidden;
+}
+
+.org-container img {
   object-fit: cover;
-  border: solid 3px #2d3848;
-  box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.4);
-  border-radius: 50%;
+  width: 100%;
 }
 
 .on-hover-bounce {
