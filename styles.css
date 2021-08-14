@@ -139,8 +139,8 @@ nav li a:hover:after {
   align-items: center;
 }
 
-.story:last-child {
-  margin-top: 60px;
+.story:nth-child(2) {
+  margin: 80px 0;
 }
 
 .org-container img {
@@ -164,8 +164,8 @@ nav li a:hover:after {
 
 .story-content p {
   padding: 0 20px;
-  line-height: 20px;
-  font-size: 15px;
+  line-height: 25px;
+  font-size: 18px;
 }
 
 .executives-container {
