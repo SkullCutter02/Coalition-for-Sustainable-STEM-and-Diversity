@@ -181,12 +181,12 @@ footer span {
 
 .accordion-button {
   background-color: #2b304c;
+  border: none;
   color: white;
   text-align: left;
   cursor: pointer;
   padding: 18px;
   width: 50%;
-  border: none;
 }
 
 .active,
