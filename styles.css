@@ -125,9 +125,22 @@ nav li a:hover:after {
   border-radius: 10px;
 }
 
-.story-content {
+.story-content img {
+  width: 100%;
+  box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.4);
+  border: solid 3px var(--imgBorderColor);
+  border-radius: 10px;
+}
+
+.story {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 30px;
+  align-items: center;
+}
+
+.story:last-child {
+  margin-top: 60px;
 }
 
 .org-container img {
@@ -151,7 +164,8 @@ nav li a:hover:after {
 
 .story-content p {
   padding: 0 20px;
-  line-height: 25px;
+  line-height: 20px;
+  font-size: 15px;
 }
 
 .executives-container {
