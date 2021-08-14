@@ -34,14 +34,31 @@ nav ul {
 nav li {
   margin: 30px;
   list-style: none;
+  z-index: 100;
 }
 
 nav li a {
   text-decoration: none;
   transition: all 0.2s;
+  font-weight: 900;
+  position: relative;
 }
 
-nav li a:hover {
+nav li a:after {
+  content: "";
+  background: rgb(244, 113, 116);
+  width: 0;
+  height: 8px;
+  position: absolute;
+  left: 0;
+  top: 10px;
+  z-index: -1;
+  opacity: 0.7;
+  transition: all 0.2s;
+}
+
+nav li a:hover:after {
+  width: 100%;
   color: rgb(244, 113, 116);
 }
 
