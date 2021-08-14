@@ -42,13 +42,16 @@ body {
 }
 
 .hero-content {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 30px;
-  width: 70%;
-  align-items: center;
-  margin: 0 auto;
+  margin: auto;
   height: 100vh;
+  display: grid;
+}
+
+.hero-text-content {
+  width: 70%;
+  display: flex;
+  margin: auto;
+  align-items: center;
 }
 
 .main-title {
@@ -60,7 +63,8 @@ body {
 }
 
 .hero-content img {
-  width: 100%;
+  width: 50%;
+  margin-right: 30px;
   object-fit: cover;
   overflow: hidden;
   border-radius: 10px;
@@ -228,4 +232,43 @@ footer span {
 
 .sdg-10 {
   color: #de1566;
+}
+
+.arrow {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.arrow span {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-bottom: 5px solid rgb(244, 113, 116);
+  border-right: 5px solid rgb(244, 113, 116);
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: scroll 2s infinite;
+}
+
+.arrow span:nth-child(2) {
+  animation-delay: -0.2s;
+}
+
+.arrow span:nth-child(3) {
+  animation-delay: -0.4s;
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px, -20px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
