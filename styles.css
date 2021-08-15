@@ -198,6 +198,14 @@ nav li a:hover:after {
   box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.4);
 }
 
+.executive p {
+  text-align: center;
+}
+
+.founder p {
+  text-align: center;
+}
+
 .founders-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -234,7 +242,7 @@ nav li a:hover:after {
   width: 100%;
 }
 
-.sdg-heading img {
+.sdg-heading {
   width: 100%;
   object-fit: contain;
   border-radius: 10px;
@@ -384,7 +392,7 @@ footer span {
   .sdg-grid-container {
     grid-template-columns: 1fr;
     grid-row-gap: 50px;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
   }
 
