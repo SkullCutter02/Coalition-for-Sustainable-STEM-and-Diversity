@@ -100,7 +100,7 @@ nav li a:hover:after {
 }
 
 .name {
-  font-size: 20px;
+  font-size: calc(0.8em + 0.3vw);
   margin-top: 10px;
 }
 
@@ -282,6 +282,7 @@ footer span {
   cursor: pointer;
   padding: 18px;
   width: 100%;
+  font-size: calc(0.7em + 0.3vw);
 }
 
 .active,
@@ -299,9 +300,10 @@ footer span {
 }
 
 .panel p {
-  margin: 20px 30px;
+  margin: 18px;
   text-align: left;
   line-height: 1.5em;
+  font-size: calc(0.7em + 0.3vw);
 }
 
 .accordion-button:after {
