@@ -64,40 +64,42 @@ nav li a:hover:after {
 }
 
 .title {
-  color: #fff;
-  font-size: calc(1em + 2vw);
-  position: relative;
-  display: inline-block;
+  display: flex;
+  align-items: center;
   margin-bottom: 30px;
 }
 
+.title-text {
+  color: #fff;
+  font-size: calc(0.7em + 2.5vw);
+  margin-left: 10px;
+}
+
 .title-number {
-  font-size: calc(1em + 2vw);
-  position: relative;
-  display: inline-block;
+  font-size: calc(0.4em + 2.2vw);
   font-weight: 600;
   color: var(--primaryColor);
   font-family: "Roboto Mono", serif;
 }
 
+.title:after {
+  content: "";
+  display: block;
+  position: relative;
+  top: 50%;
+  width: 30%;
+  background: var(--decoColor);
+  height: 1px;
+  margin-left: 30px;
+}
+
 .container {
-  width: 90%;
-  margin: 80px auto;
+  width: 80%;
+  margin: 0 auto;
   padding-top: 100px;
-  text-align: center;
 }
 
 .name {
-  /*.title::after {*/
-  /*  content: "";*/
-  /*  position: absolute;*/
-  /*  width: 100%;*/
-  /*  height: 20px;*/
-  /*  bottom: 0;*/
-  /*  left: 0;*/
-  /*  background: rgba(244, 113, 116, 0.5);*/
-  /*  z-index: -1;*/
-  /*}*/
   font-size: 20px;
   margin-top: 10px;
 }
@@ -149,17 +151,20 @@ nav li a:hover:after {
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 30px;
   align-items: center;
+}
+
+.story:not(:last-child) {
   margin: 50px 0;
 }
 
-.story-content {
-  text-align: justify;
-}
-
 .story-content p {
-  padding: 0 20px;
   line-height: 1.5em;
   font-size: calc(0.5em + 0.7vw);
+  color: var(--textColor);
+}
+
+.story-content p:nth-child(even) {
+  text-align: right;
 }
 
 .org-container img {
@@ -236,9 +241,9 @@ nav li a:hover:after {
 }
 
 #sdg-instructions {
-  font-size: calc(0.3em + 1vw);
+  font-size: calc(0.2em + 1vw);
   width: 80%;
-  margin: 0 auto;
+  color: var(--textColor);
 }
 
 .sdg-3 {
@@ -357,6 +362,10 @@ footer span {
     align-items: center;
   }
 
+  .hero-content img {
+    width: 80%;
+  }
+
   .hero-text-content h1 {
     text-align: center;
     margin-top: 30px;
@@ -391,11 +400,24 @@ footer span {
   .story-content p {
     padding: 0;
   }
+
+  .story-content p:nth-child(even) {
+    text-align: left;
+    padding: 0;
+  }
 }
 
 @media screen and (max-width: 474px) {
   .nav-hide {
     display: none;
+  }
+
+  .story:not(:last-child) {
+    margin-bottom: 80px;
+  }
+
+  .story-content p {
+    line-height: 22px;
   }
 
   .hero-text-content img {
