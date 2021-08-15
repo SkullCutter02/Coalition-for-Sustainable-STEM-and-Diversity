@@ -467,6 +467,10 @@ footer span {
   .members-container {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .panel p {
+    font-size: calc(0.7em + 1vw);
+  }
 }
 
 @media screen and (max-width: 779px) {
