@@ -269,9 +269,10 @@ footer p {
   color: #4a5667;
 }
 
-footer span {
+footer a {
   color: var(--primaryColor);
   cursor: pointer;
+  text-decoration: none;
 }
 
 .accordion-button {
